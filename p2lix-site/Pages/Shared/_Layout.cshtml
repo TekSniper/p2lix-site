@@ -3,12 +3,16 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - p2lix_site</title>
+    <title>@ViewData["Title"] - P2Lix Creative</title>
     <link href="~/lib/bulma/css/bulma.css" rel="stylesheet" />
     <link href="~/lib/bulma/css/bulma.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/p2lix_site.styles.css" asp-append-version="true" />
+    <link href="~/lib/fontawesome/css/all.css" rel="stylesheet" />
+    <link href="~/lib/fontawesome/css/all.min.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="~/img/logo p2lix ii p.png" />
+    <script src="~/lib/fontawesome/js/all.js"></script>
+    <script src="~/lib/fontawesome/js/all.min.js"></script>
 </head>
 <body>
     <header>
@@ -47,20 +51,86 @@
                             <a class="navbar-item">Témoignages</a>
                         </div>
                     </div>
-                    <a class="navbar-item tr_link">Contact</a>
+                    <a href="/Contact" class="navbar-item tr_link">Contact</a>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="footer">
-        <div class="container has-text-centered has-text-weight-semibold">
-            &copy; @DateTime.Now.Year - P2Lix Creative | <a class="f_link">A propos de P2Lix Creative</a>&nbsp; <a class="f_link">Services</a>&nbsp; <a class="f_link">Réalisations</a>&nbsp; <a class="f_link">Contact</a>
+    @RenderBody()
+
+    <footer class="footer is-align-content-center">
+        <div class="container">
+            <div class="columns">
+                <div class="column has-text-weight-semibold is-justify-content-center">
+                    &copy; @DateTime.Now.Year - P2Lix Creative
+                </div>
+                <div class="column">
+                    <h2>
+                        <strong>
+                            <a href="#" class="tr_link">A propos de P2Lix Creative</a>
+                        </strong>
+                    </h2>
+                </div>
+                <div class="column">
+                    <h2>
+                        <strong><a class="tr_link">Services</a></strong>
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="#" class="tr_link">
+                                <i class="fa-solid fa-pen-nib"></i>&nbsp;Graphic Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tr_link">
+                                <i class="fa-solid fa-shapes"></i>&nbsp;TechUp Coaching
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tr_link">
+                                <i class="fa-solid fa-laptop-code"></i>&nbsp;IT Dev.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tr_link">
+                                <i class="fa-solid fa-laptop-file"></i>&nbsp;Bureautique
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2>
+                        <strong>
+                            <a class="tr_link">Réalisations</a>
+                        </strong>
+                    </h2>
+                    <ul>
+                        <li>
+                            <a href="#" class="tr_link">
+                                <i class="fa-solid fa-pen-nib"></i>&nbsp;Graphic Design
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tr_link">
+                                <i class="fa-solid fa-laptop-code"></i>&nbsp;IT Dev.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="tr_link">
+                                <i class="fa-solid fa-comments"></i>&nbsp;Témoignages
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column has-text-centered-desktop">
+                    <h2>
+                        <strong>
+                            <a href="/Contact" class="tr_link">Contact</a>
+                        </strong>
+                    </h2>
+                </div>
+            </div>
         </div>
     </footer>
 

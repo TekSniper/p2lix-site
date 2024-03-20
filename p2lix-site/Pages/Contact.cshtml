@@ -1,0 +1,109 @@
+﻿@page
+@model p2lix_site.Pages.ContactModel
+@{
+    ViewData["title"] = "Nous contacter";
+}
+<style type="text/css">
+    .block-contact{
+        margin-top:50px;
+    }
+    figure .img{
+        position:relative;
+    }
+    figure .banner-contact{
+        position:absolute;
+        width:100%;
+        text-align:center;
+        top:15%;
+    }
+    /* .container{
+        margin-top:20px;
+    } */
+    .under-title{
+        height:3px;
+        background-color: #2B718E;
+        width:80px;
+        margin-top:-15px;
+    }
+    .under-section{
+        height:3px;
+    }
+</style>
+<div class="block-contact">
+    <figure class="is-fullwidth figure-contact">
+        <img class="img" src="~/img/banner-contact-1.jpg" />
+        <div class="banner-contact">
+            <div class="columns is-centered">
+                <div class="column is-6">
+                    <h1 class="title title-ban-contact">Nous contacter</h1>
+                    <p class="txt-ban-contact">
+                        Vous avez des questions, des besoins spécifiques ou simplement envie de discuter de votre prochain projet ? N’hésitez pas à nous contacter ! Notre équipe est là pour vous aider.
+                    </p>
+                </div>
+            </div>            
+        </div>
+    </figure>
+</div>
+<div class="container">
+    <div class="columns is-centered">
+        <div class="column is-6">
+            <h1 class="title"><i class="fa-solid fa-mobile"></i>&nbsp;Ligne Mobile</h1>
+            <hr class="under-title" />
+            Ce numéro de téléphone est dédié à notre service d’assistance : <strong>+243 891 490 091</strong>
+            <hr class="under-section" />
+            <h1 class="title"><i class="fa-solid fa-location-dot"></i>&nbsp;Adresse Physique</h1>
+            <hr class="under-title" />
+            <h3 class="subtitle">P2Lix Creative Kinshasa</h3>
+            10c Av. Nzita, Q. Ngomba-Kinkusa, C. Ngaliema
+            <hr class="under-section" />
+            <h1 class="title"><i class="fa-solid fa-share-from-square"></i>&nbsp;Réseaux sociaux</h1>
+            <hr class="under-title" />
+            <a class="tr_link" href="https://wa.me/message/76XBMOP3OWSIH1" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>&nbsp;WhatsApp
+            </a>&nbsp;&nbsp;
+            <a class="tr_link" href="https://facebook.com/profile.php?id=61555875929737" target="_blank">
+                <i class="fa-brands fa-facebook"></i>&nbsp;Facebook
+            </a>&nbsp;&nbsp;
+            <a class="tr_link" href="https://instagram.com/p2lix.creative" target="_blank">
+                <i class="fa-brands fa-instagram"></i>&nbsp;Instagram
+            </a>&nbsp;&nbsp;
+            <a class="tr_link" href="https://pinterest.com/p2lixcreative" target="_blank">
+                <i class="fa-brands fa-pinterest"></i>&nbsp;Pinterest
+            </a>
+        </div>
+        <div class="column is-4">
+
+            <form method="post">
+                <div class="field">
+                    <label class="label" for="name">Nom</label>
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Votre Nom" name="nom" id="name" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="prenom">Prénom</label>
+                    <div class="control">
+                        <input type="text" class="input" placeholder="Votre Prénom" name="prenom" id="prenom" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="email">Email</label>
+                    <div class="control">
+                        <input type="email" class="input" placeholder="Votre Email" name="email" id="email" />
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="msg">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" placeholder="Votre message" id="msg" name="messsage"></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <input type="submit" class="button is-outlined" value="Envoyer le message" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
